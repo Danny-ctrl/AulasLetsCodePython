@@ -1,5 +1,5 @@
 
-# segunda aula
+# terceira aula
 idade = 26  # criando uma variável int
 print(idade)
 
