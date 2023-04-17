@@ -42,3 +42,58 @@ for elemento in lista:  # para cada elemento dentro da lista percorra
 
 for i in range(len(lista)):
     print(lista[i])
+
+
+# Métodos de listas
+lista = [1, 2, 3, 12, 8, 56]
+
+# append (adiciona elemento no final)
+print('Antes do append: ', lista)
+lista.append(26)
+print('Depois do append: ', lista)
+
+# insert (adiciona o elemento escolhendo a posição)
+lista.insert(2, 38)
+print('Depois do insert: ', lista)
+
+# extend (juntar duas listas)
+lista2 = [6, 8, 7]
+lista.extend(lista2)
+
+print('Depois do extend: ', lista)
+
+# pop (remover elemento especificando ou o ultimo elemento)
+lista.pop()
+print('lista após o pop: ', lista)
+
+lista.pop(0)
+print('lista após o pop0: ', lista)
+
+# remove (informe o valor que quer retirar(o primeiro caso tenha equivalentes))
+
+lista.remove(12)
+print('lista após o remove: ', lista)
+
+# count (contar o elemento da lista)
+print('Quantidade de 3 na lista: ', lista.count(3))
+
+# index (diz o indice de um determinado elemento na lista)
+print('Indice do elemento 3 na lista: ', lista.index(3))
+
+# sort(ordenar lista)
+lista.sort()
+print(lista)
+
+lista.sort(reverse=True)
+print(lista)
+
+# Funções para listas
+
+# len (quantos elementos a lista tem)
+print(len(lista))
+# sum(soma de todos os elementos de listas)
+print(sum(lista))
+# max (maior valor)
+print('Maior elemento da lista', max(lista))
+# min (menor valor)
+print('Menor elemento da lista', min(lista))
